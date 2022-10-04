@@ -1,4 +1,5 @@
 import {
+    assets,
     badge,
     BadgeType,
     git,
@@ -29,6 +30,8 @@ npmPackagr({
 
         git("commit", project),
         git("push"),
+
+        assets("README.md"),
 
         packageJSON(packageJson => {
             packageJson.main = "jest-async-fn.js";
