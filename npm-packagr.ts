@@ -36,12 +36,6 @@ npmPackagr({
         packageJSON(packageJson => {
             packageJson.main = "jest-async-fn.js";
 
-            const dependencies = packageJson.devDependencies!;
-
-            packageJson.peerDependencies = {
-                jest: dependencies["jest"],
-            };
-
             delete packageJson.devDependencies;
             delete packageJson.scripts;
         }),

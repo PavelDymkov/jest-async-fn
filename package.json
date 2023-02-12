@@ -26,11 +26,15 @@
         "pub": "packagr",
         "test": "jest test/*.test.js"
     },
+    "peerDependencies": {
+        "jest": "*"
+    },
     "devDependencies": {
-        "@types/jest": "^29.1.1",
-        "jest": "^29.1.2",
+        "@types/jest": "^29.4.0",
+        "@types/node": "^18.13.0",
+        "jest": "^29.4.2",
         "npm-packagr": "^1.0.71",
-        "prettier": "^2.7.1",
-        "typescript": "^4.8.4"
+        "prettier": "^2.8.4",
+        "typescript": "^4.9.5"
     }
 }
